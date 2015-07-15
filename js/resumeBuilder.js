@@ -13,7 +13,7 @@ var bio = {
     "welcomeMessage" : "Welcome to my resume!",
     "skills" : ["Web Development","SQL","MS Excel","VBA","IT Security","Photography"],
     "bioPic" : "images/fry.jpg"
-}
+};
 
 
 var education = {
@@ -45,7 +45,7 @@ var education = {
 
 		}
 	]
-}
+};
 
 var work = {
 "jobs": [
@@ -64,7 +64,7 @@ var work = {
 			"description" : "I worked on monitoring databases and performed IT Security tasks."
 		} 
 	]
-}
+};
 
 var project = {
 	"assignment" : [
@@ -81,7 +81,7 @@ var project = {
 			"images" : ["images/p2.png"]
 		}
 	]
-}
+};
 
 
 
@@ -152,7 +152,7 @@ function displayProjects(){
 
 		var myProjectTitle = HTMLprojectTitle.replace("%data%", project.assignment[eachProject].title);
 		var myProjectDate = HTMLprojectDates.replace("%data%", project.assignment[eachProject].date);
-		var myProjectDescription = HTMLprojectDescription.replace("%data%", project.assignment[eachProject].description)
+		var myProjectDescription = HTMLprojectDescription.replace("%data%", project.assignment[eachProject].description);
 
 		$(".project-entry:last").append(myProjectTitle);
 		$(".project-entry:last").append(myProjectDate);
